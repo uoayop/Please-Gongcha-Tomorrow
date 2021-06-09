@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import RecipeList from "./recipeList";
+import { AiOutlineHeart } from "react-icons/ai";
 import Menus from "./menus";
 import "./style/App.css";
 
@@ -19,9 +20,7 @@ function Gongcha() {
     });
   };
 
-  const [Recipes, setRecipes] = useState([
-    
-  ]);
+  const [Recipes, setRecipes] = useState([]);
 
   const nextId = useRef(1);
 
@@ -45,8 +44,11 @@ function Gongcha() {
       <span>{name}</span>
       <span> {topping === "" ? "" : "+ " + topping}</span>
 
-      <button onClick={CreateRecipe}>좋아요</button>
-      <br /><br />
+      <button onClick={CreateRecipe}>
+        <AiOutlineHeart size="19"/>
+      </button>
+      <br />
+      <br />
       <Menus ChangeDrink={ChangeDrink} />
       <RecipeList recipes={Recipes} onRemove={RemoveRecipe} />
     </div>

@@ -1,10 +1,35 @@
-.menus{
+.combine{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
-    height: 150px;
+    width: 280px;
+    height: 160px;
 }
 
-table{
-    margin-right: 10px;
+
+.title{
+    border: 1px solid #444;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 5px;
 }
+
+.content{
+    height: 95px;
+    overflow: scroll;
+    border-left: 1px solid #444;
+    border-right: 1px solid #444;
+    border-bottom: 1px solid #444;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px 10px;
+}
+
+.content > div{
+    padding: 3px 0px;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+  }
