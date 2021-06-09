@@ -19,19 +19,24 @@ function Gongcha(){
         });
     },[drink]);
 
-    const {Recipes,setRecipes} = useState([
+    const [Recipes,setRecipes] = useState([
         {
             name: '우롱밀크티',
             topping: '코코넛'
         },
+        {
+            name: '블랙밀크티',
+            topping: '펄'
+        },
     ]);
 
+    console.log("Recipes:",Recipes);
+
     const CreateRecipe = () => {
-        // console.log(name, topping)
         const recipe = {
             name, topping
         }
-        setRecipes( ...Recipes, recipe);
+        setRecipes( Recipes.concat(recipe));
     };
 
     return(
@@ -40,7 +45,7 @@ function Gongcha(){
             <div>
                 {name} + {topping}
             </div>
-            <button onClick={() => CreateRecipe()}>좋아요</button>
+            <button onClick={CreateRecipe}>좋아요</button>
             <br /><br />
             <table>
                 <tr>
