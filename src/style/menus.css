@@ -1,0 +1,10 @@
+.menus{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 150px;
+}
+
+table{
+    margin-right: 10px;
+}
