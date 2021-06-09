@@ -22,6 +22,6 @@ function recipeList({recipes}){
         }
         </>
     )
-}
+} 
 
 export default recipeList;
