@@ -1,14 +1,15 @@
-function Recipe({recipe}){
-    const {name, topping} = recipe;
+function Recipe({recipe, onRemove}){
+    const {id, name, topping} = recipe;
     return(
         <div>
-            <b>{name}</b> + 
-            <span>{topping}</span>
+            <b>{name}</b>
+            <span> { topping === "" ? "" : "+ " + topping}</span>
+            <button onClick={() => onRemove(id)}>삭제</button>
         </div>
     )
 }
 
-function recipeList({recipes}){
+function recipeList({recipes, onRemove}){
     console.log(recipes);
     return(
         <>
@@ -17,7 +18,8 @@ function recipeList({recipes}){
             recipes.map((recipe,index)=>(
                 <Recipe
                     recipe = {recipe}
-                    key = {index}
+                    key = {recipe.id}
+                    onRemove = {onRemove}
                 />
             ))
         }
