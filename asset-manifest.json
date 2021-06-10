@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Please-Gongcha-Tomorrow/static/css/main.2881617e.chunk.css",
-    "main.js": "/Please-Gongcha-Tomorrow/static/js/main.6248c5f3.chunk.js",
-    "main.js.map": "/Please-Gongcha-Tomorrow/static/js/main.6248c5f3.chunk.js.map",
+    "main.css": "/Please-Gongcha-Tomorrow/static/css/main.4a131a7d.chunk.css",
+    "main.js": "/Please-Gongcha-Tomorrow/static/js/main.b4dd4d6e.chunk.js",
+    "main.js.map": "/Please-Gongcha-Tomorrow/static/js/main.b4dd4d6e.chunk.js.map",
     "runtime-main.js": "/Please-Gongcha-Tomorrow/static/js/runtime-main.9e596b91.js",
     "runtime-main.js.map": "/Please-Gongcha-Tomorrow/static/js/runtime-main.9e596b91.js.map",
     "static/js/2.d3ec06ea.chunk.js": "/Please-Gongcha-Tomorrow/static/js/2.d3ec06ea.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.71e65e16.chunk.js": "/Please-Gongcha-Tomorrow/static/js/3.71e65e16.chunk.js",
     "static/js/3.71e65e16.chunk.js.map": "/Please-Gongcha-Tomorrow/static/js/3.71e65e16.chunk.js.map",
     "index.html": "/Please-Gongcha-Tomorrow/index.html",
-    "static/css/main.2881617e.chunk.css.map": "/Please-Gongcha-Tomorrow/static/css/main.2881617e.chunk.css.map",
+    "static/css/main.4a131a7d.chunk.css.map": "/Please-Gongcha-Tomorrow/static/css/main.4a131a7d.chunk.css.map",
     "static/js/2.d3ec06ea.chunk.js.LICENSE.txt": "/Please-Gongcha-Tomorrow/static/js/2.d3ec06ea.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9e596b91.js",
     "static/js/2.d3ec06ea.chunk.js",
-    "static/css/main.2881617e.chunk.css",
-    "static/js/main.6248c5f3.chunk.js"
+    "static/css/main.4a131a7d.chunk.css",
+    "static/js/main.b4dd4d6e.chunk.js"
   ]
 }
