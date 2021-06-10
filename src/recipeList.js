@@ -16,7 +16,6 @@ function Recipe({ recipe, onRemove }) {
 function recipeList({ recipes, onRemove }) {
   return (
     <>
-      <h3>💛최애 조합💛</h3>
       {recipes.map((recipe, index) => (
         <Recipe recipe={recipe} key={recipe.id} onRemove={onRemove} />
       ))}
