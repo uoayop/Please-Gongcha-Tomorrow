@@ -5,11 +5,13 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: rgb(248, 248, 248);
 }
 
 th{
   border: 1px solid #444;
   border-radius: 10px;
+  padding: 3px 0px;
 }
 
 button{
@@ -17,3 +19,17 @@ button{
   border: none;
 }
 
+.content-wrapper{
+  display: flex;
+  flex-direction: row;
+}
+
+.recipes{
+  min-width: 290px;
+  margin-left: 10px;
+}
+
+.recipeList{
+  height: 190px;
+  overflow: scroll;
+}

@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import RecipeList from "./recipeList";
+import { AiOutlineHeart } from "react-icons/ai";
 import Menus from "./menus";
 import "./style/App.css";
 
@@ -19,9 +20,7 @@ function Gongcha() {
     });
   };
 
-  const [Recipes, setRecipes] = useState([
-    
-  ]);
+  const [Recipes, setRecipes] = useState([]);
 
   const nextId = useRef(1);
 
@@ -41,14 +40,25 @@ function Gongcha() {
 
   return (
     <div>
-      <h3>당신의 공차는?!</h3>
-      <span>{name}</span>
-      <span> {topping === "" ? "" : "+ " + topping}</span>
-
-      <button onClick={CreateRecipe}>좋아요</button>
-      <br /><br />
-      <Menus ChangeDrink={ChangeDrink} />
-      <RecipeList recipes={Recipes} onRemove={RemoveRecipe} />
+      <div className="content-wrapper">
+        <div className="selector">
+          <h3>당신의 공차는?!</h3>
+          <Menus ChangeDrink={ChangeDrink} />
+          <span>
+            {name}
+            {topping === "" ? "" : "+ " + topping}
+            <button onClick={CreateRecipe}>
+              <AiOutlineHeart size="19" />
+            </button>
+          </span>
+        </div>
+        <div className="recipes">
+          <h3>💛최애 조합💛</h3>
+          <div className="recipeList">
+            <RecipeList recipes={Recipes} onRemove={RemoveRecipe} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
